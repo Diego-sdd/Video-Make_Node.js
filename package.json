@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Diego-sdd/Video-Make_Node.js/issues"
   },
-  "homepage": "https://github.com/Diego-sdd/Video-Make_Node.js#readme"
+  "homepage": "https://github.com/Diego-sdd/Video-Make_Node.js#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
