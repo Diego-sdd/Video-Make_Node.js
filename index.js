@@ -1,6 +1,11 @@
 const readline = require('readline-sync')
+
+const robots = {
+    text: require('./robots/text.js')
+}
+
 //Agrupa tudo
-function start(){
+async function start(){
 
     //usando a biblioteca readline-senc para efetuar o input do usuario
 
@@ -8,6 +13,8 @@ function start(){
 
     content.searchTerm = askAndReturnSearchterm()
     content.prefix = askandReturnPrefix()
+
+    await robots.text(content) 
 
     function askAndReturnSearchterm(){
         return readline.question('Type a Wikipedia seach term: ')
